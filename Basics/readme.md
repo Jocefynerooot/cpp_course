@@ -21,7 +21,6 @@ int main()
 */
 ```
 
-
 #### cout
 >The "c" in cout refers to "character" and "out" means "output". Hence cout means "character output". The cout object is used along with the insertion operator << in order to display a stream of characters.
 ```cpp
@@ -100,4 +99,42 @@ with endl
 ```terminal
 Hello everyone 
 Please Comment
+```
+
+
+## Variables
+#### What are Variables ?
+>Variables are containers to store data values. there are different types of variables in cpp.(defined with different keywords) ex:- int, double, bool
+int --> for storing integers (whole Numbers). ex.- 1,4,6,2,6,43,-43 etc
+double -->for storing floating point numbers with decimal. ex.- 1.4, 43.5 or -43.2 etc
+bool --> for storing boolean values. ex.- true, false
+
+simple code example
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+    cout << "Variables Tutorial" << endl;
+
+    int var = 12;
+
+    cout << 12 << endl;
+    cout << var << endl;
+    
+    var = 14;
+
+    int var2 = var;
+
+    cout<< var2 << endl;
+
+    return 0;
+}
+```
+```output
+Variables Tutorial
+12
+12
+14
 ```
