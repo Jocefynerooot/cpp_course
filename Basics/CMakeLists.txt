@@ -8,5 +8,6 @@ add_executable(Basics
     # 2_cout_endl_etc.cpp
     # 6_variables.cpp
     # 7_dataTypes.cpp
-    8_more_on_variables.cpp
+    # 8_more_on_variables.cpp
+    9_strings.cpp
 )
