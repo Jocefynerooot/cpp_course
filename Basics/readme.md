@@ -247,3 +247,53 @@ int main()
     return 0;
 }
 ```
+
+## Strings
+```cpp
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+    // creating variable
+    string var = "Jocefyneroot";
+
+    // printing
+    cout << var << endl;
+
+    cout << var.size() << endl; // printing size
+
+    // string functions
+    var.append("m"); 
+
+    cout << var << endl;
+    cout << var.size() << endl;
+    cout << var.find("n") << endl;
+    cout << var.at(3) << endl;
+
+    var.insert(0, "c");
+    cout << var << endl;
+
+    // index
+    cout << var[4] << endl;
+    cout << var[5] << endl;
+    cout << var[6] << endl;
+
+    // var[0] = "M"; # not allow
+
+    return 0;
+}
+```
+```
+Jocefyneroot
+12
+Jocefynerootm
+13
+6
+e
+cJocefynerootm
+e
+f
+y
+```
