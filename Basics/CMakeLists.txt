@@ -6,5 +6,6 @@ add_executable(Basics
 
     # 1_writingFirstCppCode.cpp
     # 2_cout_endl_etc.cpp
-    6_variables.cpp
+    # 6_variables.cpp
+    7_dataTypes.cpp
 )
