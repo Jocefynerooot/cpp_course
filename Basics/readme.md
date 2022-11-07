@@ -297,3 +297,32 @@ e
 f
 y
 ```
+
+## Keywords
+Keywords (also known as reserved words) have special meaning to the C++ compiler and are always written or typed in short(lower) cases. Keywords are words that the language uses for a special purpose, such as void, int, public, etc. It can't be used for a variable name or function name.
+
+### C++ (84 reserved keywords)
+| | | | |
+|---|---|---|---|
+|  alignas | alignof | asm | auto |
+|  bool | break | case | catch |
+|  char | char16_t | char32_t | class |
+|  const | constexpr | const_cast | continue |
+|  decltype | default | delete | do |
+|  double | dynamic_cast | else | enum |
+|  explicit | export | extern | false |
+|  float | for | friend | goto |
+|  if | inline | int | long |
+|  mutable | namespace | new | noexcept |
+|  nullptr | operator | private | protected |
+|  public | register | reinterpret_cast | return |
+|  short | signed | sizeof | static |
+|  static_assert | static_cast | struct | switch |
+|  template | this | thread_local | throw |
+|  true | try | typedef | typeid |
+|  typename | union | unsigned | using |
+|  virtual | void | volatile | wchar_t |
+|  while | and | and_eq | bitand |
+|  bitor | compl | not | not_eq |
+|  or | or_eq | xor | xor_eq |
+
