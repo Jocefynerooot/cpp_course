@@ -326,3 +326,103 @@ Keywords (also known as reserved words) have special meaning to the C++ compiler
 |  bitor | compl | not | not_eq |
 |  or | or_eq | xor | xor_eq |
 
+## Operators
+an operator is a symbol that operates on a value or a variable.
+
+#### Type of Operators in cpp
+1. Arithmatic operators --> +, -, *, /, %
+2. Assignment operators --> =, +=, -=, /=, *=
+3. Relational operators --> ==, >=, <=, > , <
+4. Logical operators --> &&, ||, !          (and, or not)
+5. Bitwise operators --> & , >>, <<
+6. others --> &, <<, >>
+
+### 1. Arithmatic operators 
+Arithmetic Operators in C++ are used to perform arithmetic or mathematical operations on the operands.
+##### example 
+```cpp
+// 1. Arithmatic operators
+int a = 21;
+int b = 2;
+
+cout << "a + b is " << a + b << endl;
+cout << "a - b is " << a - b << endl;
+cout << "a * b is " << a * b << endl;
+cout << "a / b is " << a / b << endl;
+cout << "a % b is " << a % b << endl;
+```
+
+### 2. Assignment operators 
+assignment operators are used to assign values to variables.
+##### example 
+```cpp
+// 2. Assignment operators
+int x = 4;
+int y = 2;
+int z = x += y;
+cout << "x is " << x << endl;
+x += y;
+
+cout << "x += y is " << z << endl;
+cout << "x is " << x << endl;
+```
+
+### 3. Relational operators
+A relational operator is used to check the relationship between two operands.
+##### example 
+```cpp
+// 3. Relational operators
+int j = 2;
+y = 32;
+
+cout << "j == y: " << (j == y) << endl;
+cout << "j >= y: " << (j >= y) << endl;
+cout << "j < y: " << (j < y) << endl;
+cout << "j <= y: " << (j <= y) << endl;
+```
+
+### 4. Logical operators 
+Logical operators are used to check whether an expression is true or false. If the expression is true, it returns 1 whereas if the expression is false, it returns 0.
+##### example 
+```cpp
+// 4. Logical operators
+cout << ((j == y) && (j <= y)) << endl;
+cout << ((j == y) || (j <= y)) << endl;
+cout << ((j != y)) << endl;
+```
+
+### 5. Bitwise operators 
+bitwise operators perform operations on integer data at the individual bit-level.
+##### example 
+```cpp
+a & b;
+a | b;
+```
+
+### 6. others
+some other common operators available in C++. 
+##### example 
+```cpp
+// << --> prints the output value	
+cout << 5;
+// >> --> gets the input value	
+cin >> num;
+
+/// sizeof --> returns the size of data type	
+sizeof(int); // 4
+
+// ?: --> returns value based on the condition	
+std::string result = (5 > 0) ? "even" : "odd"; // "even"
+
+// . --> accesses members of struct variables or class objects	
+s1.marks = 92;
+
+// we are going to learn pointers in up comming videos so don't worry about these operators
+// & --> represents memory address of the operand	
+&num; // address of num
+
+
+// ->	--> used with pointers to access the class or struct variables	
+ptr->marks = 92;
+```
+
