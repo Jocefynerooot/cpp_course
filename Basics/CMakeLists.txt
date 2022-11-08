@@ -11,5 +11,6 @@ add_executable(Basics
     # 8_more_on_variables.cpp
     # 9_strings.cpp
     # 10_keywords.cpp
-    11_operators.cpp
+    # 11_operators.cpp
+    12_identifiers.cpp
 )
