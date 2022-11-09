@@ -437,3 +437,49 @@ All C++ variables must be identified with unique names. These unique names are c
 3. Names are case sensitive (myVar and myvar are different variables)
 4. Names cannot contain whitespaces or special characters like !, #, %, etc.
 5. Reserved words (like C++ keywords, such as int) cannot be used as names
+
+## Control statement
+1. If-else and it's type
+2. Switch
+3. Loop
+4. Entry control
+5. Exit control
+6. Break statement
+7. Continue statement
+8. Goto statement
+9. Comment statement
+
+#### 1. If-else and it's type
+if-else is used in programming to perform some task if certain conditions are satisfied. using if-else you are able to do condition-based programming. Ex:- if a < b then do something, if a==b then do something, etc. In our daily life we use condition based works sometimes our mom tell us to borrow ladyfinger if Cauliflower is not there. Same like that we perform some task in programming if some condition is met.
+
+###### template
+```cpp
+if (/* condition */)
+{
+    /* code */
+}
+```
+
+###### CODE EXAMPLE
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a = 6;
+    int b = 3;
+    
+    if (a < b)
+    {
+        // execute if condition becomes true
+        cout << "a is greater than b" << endl;
+    }
+    else
+    {
+        // execute if condition becomes false 
+        cout << "a is less than b" << endl;
+    }
+
+    return 0;
+}
+```
