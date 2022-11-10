@@ -502,7 +502,7 @@ else
 
 cout << "END OF THE PROGRAM" << endl;
 ```
-• we use the ```if-else-if`` ladder while coding to perform more than one condition.
+• we use the ```if-else-if``` ladder while coding to perform more than one condition.
 ```cpp
 // if-else-if-else ladder
 if (a > b)
@@ -532,7 +532,7 @@ else
 ```
 
 ##### Checking Some Cases
-1. can we use only if --> yes
+1. can we use only if --> Yes
 ```cpp
 int x = 12;
 int y = 43;
@@ -546,11 +546,8 @@ if (x < y)
  x is less than y
 ```
 
-2. can we use only else without if --> no
+2. can we use only else without if --> No
 ```cpp
-cout << "Checking some conditions" << endl;
-// can we use only else without if --> no
-
 else
 {
 
@@ -567,7 +564,7 @@ make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/Basics.dir/all] Error 2
 make: *** [Makefile:91: all] Error 2
 ```
 
-3. can we use else if without if --> no
+3. can we use else if without if --> No
 ```cpp
 else if (x < y)
 {
