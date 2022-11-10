@@ -533,7 +533,6 @@ else
 
 ##### Checking Some Cases
 1. can we use only if --> yes
-3. can we use else if without if --> no
 ```cpp
 int x = 12;
 int y = 43;
@@ -546,22 +545,48 @@ if (x < y)
 ```
  x is less than y
 ```
+
 2. can we use only else without if --> no
 ```cpp
+cout << "Checking some conditions" << endl;
+// can we use only else without if --> no
 
-    cout << "Checking some conditions" << endl;
-    // can we use only else without if --> no
-    
-    else
-    {
+else
+{
 
-    }
-    
-    // can we use else if without if --> no
-    /*
-        else if (x < y)
-        {
-            cout << " x is less than y" << endl;
-        }
-    */
+}
+```
+###### OUTPUT
+```bash
+/home/jocefyneroot/workspace/cpp_course/Basics/14_if-else-if-else.cpp: In function ‘int main()’:
+/home/jocefyneroot/workspace/cpp_course/Basics/14_if-else-if-else.cpp:56:5: error: ‘else’ without a previous ‘if’
+   56 |     else
+      |     ^~~~
+make[2]: *** [CMakeFiles/Basics.dir/build.make:76: CMakeFiles/Basics.dir/14_if-else-if-else.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/Basics.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+```
+
+3. can we use else if without if --> no
+```cpp
+else if (x < y)
+{
+    cout << " x is less than y" << endl;
+}
+```
+###### OUTPUT
+```bash
+ ‘int main()’:
+/home/jocefyneroot/workspace/cpp_course/Basics/14_if-else-if-else.cpp:60:5: error: ‘else’ without a previous ‘if’
+   60 |     else if (x < y)
+      |     ^~~~
+/home/jocefyneroot/workspace/cpp_course/Basics/14_if-else-if-else.cpp:60:14: error: ‘x’ was not declared in this scope
+   60 |     else if (x < y)
+      |              ^
+/home/jocefyneroot/workspace/cpp_course/Basics/14_if-else-if-else.cpp:60:18: error: ‘y’ was not declared in this scope
+   60 |     else if (x < y)
+      |                  ^
+make[2]: *** [CMakeFiles/Basics.dir/build.make:76: CMakeFiles/Basics.dir/14_if-else-if-else.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/Basics.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
 ```
