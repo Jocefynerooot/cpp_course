@@ -449,10 +449,10 @@ All C++ variables must be identified with unique names. These unique names are c
 8. Goto statement
 9. Comment statement
 
-#### 1. If-else and it's type
+### 1. If-else and it's type
 if-else is used in programming to perform some task if certain conditions are satisfied. using if-else you are able to do condition-based programming. Ex:- if a < b then do something, if a==b then do something, etc. In our daily life we use condition based works sometimes our mom tell us to borrow ladyfinger if Cauliflower is not there. Same like that we perform some task in programming if some condition is met.
 
-###### template
+#### template
 ```cpp
 if (/* condition */)
 {
@@ -482,4 +482,86 @@ int main()
 
     return 0;
 }
+```
+#### > if-else-if-else ladder
+• we use if-else to check a condition ```if(condition) {code} else {code}```. if the condition becomes ```true``` then do the operation under ```if``` parentheses, if the condition becomes ```false``` then run the code inside ``else``
+
+```cpp
+int a = 32;
+int b = 56;
+
+// if-else
+if (a > b)
+{
+    cout << "a is greater than b" << endl;
+}
+else
+{
+    cout << "a is less than b" << endl;
+}
+
+cout << "END OF THE PROGRAM" << endl;
+```
+• we use the ```if-else-if`` ladder while coding to perform more than one condition.
+```cpp
+// if-else-if-else ladder
+if (a > b)
+{
+    cout << "a is greater than b" << endl;
+}
+else if (a < b)
+{
+    cout << "a is less than b" << endl;
+}
+else if (a >= b)
+{
+    cout << "a is less than b" << endl;
+}
+else if (a == b)
+{
+    cout << "a is less than b" << endl;
+}
+else if (a != b)
+{
+    cout << "a is less than b" << endl;
+}
+else
+{
+    cout << "all conditions are failed" << endl;
+}
+```
+
+##### Checking Some Cases
+1. can we use only if --> yes
+3. can we use else if without if --> no
+```cpp
+int x = 12;
+int y = 43;
+if (x < y)
+{
+    cout << " x is less than y" << endl;
+}
+```
+###### OUTPUT
+```
+ x is less than y
+```
+2. can we use only else without if --> no
+```cpp
+
+    cout << "Checking some conditions" << endl;
+    // can we use only else without if --> no
+    
+    else
+    {
+
+    }
+    
+    // can we use else if without if --> no
+    /*
+        else if (x < y)
+        {
+            cout << " x is less than y" << endl;
+        }
+    */
 ```
