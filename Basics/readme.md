@@ -587,3 +587,63 @@ make[2]: *** [CMakeFiles/Basics.dir/build.make:76: CMakeFiles/Basics.dir/14_if-e
 make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/Basics.dir/all] Error 2
 make: *** [Makefile:91: all] Error 2
 ```
+
+### Logical Operators with If-else
+```
+if ((Expression-1) || (Expression-2) && (Expression-3)){
+    ⋮
+}
+else{
+    ⋮
+}
+```
+EXAMPLES
+###### Operatos
+```cpp
+&& --> and
+|| --> or
+!  --> not
+``` 
+###### VARIABLES
+```cpp
+int var = 8;
+int var2 = 4;
+int var3 = var - var2;
+```
+#### || --> run if at least one expression must become true
+```cpp
+// || --> or operator
+if ((var == var2) || (var > var2))
+{
+    cout << var << " is greater than or equals to " << var2 << ": " << var + var2 << endl;
+}
+```
+```
+8 is greater than or equals to 4: 12
+```
+#### && --> run if both expressions must become true
+```cpp
+// && --> and operator
+if ((var2 == var3) && (var > var2))
+{
+    cout << var << " is greater than and equals to " << var2 << ": " << var + var2 << endl;
+}
+```
+```
+8 is greater than and equals to 4: 12
+```
+#### ! --> runs if the expression becomes false
+```cpp
+// ! --> not operator
+if (!((var2 == var3) && (var > var2)))
+{
+    cout << var << " is not greater than and equals to " << var2 << ": " << var + var2 << endl;
+}
+else
+{
+    cout << "Condition failed" << endl;
+}
+```
+```
+8 is not greater than and equals to 4: 12
+```

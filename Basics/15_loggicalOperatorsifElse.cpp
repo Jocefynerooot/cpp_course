@@ -18,13 +18,13 @@ int main()
         cout << var << " is greater than or equals to " << var2 << ": " << var + var2 << endl;
     }
 
-    // && --> or operator
+    // && --> and operator
     if ((var2 == var3) && (var > var2))
     {
         cout << var << " is greater than and equals to " << var2 << ": " << var + var2 << endl;
     }
 
-    // ! --> or operator
+    // ! --> not operator
     if (!((var2 == var3) && (var > var2)))
     {
         cout << var << " is not greater than and equals to " << var2 << ": " << var + var2 << endl;
