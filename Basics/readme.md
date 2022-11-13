@@ -382,7 +382,7 @@ cout << "j <= y: " << (j <= y) << endl;
 ```
 
 ### 4. Logical operators 
-Logical operators are used to check whether an expression is true or false. If the expression is true, it returns 1 whereas if the expression is false, it returns 0.
+Logical operators are used to checking whether an expression is true or false. If the expression is true, it returns 1 whereas if the expression is false, it returns 0. we use logical operators to check more than one expression.
 ##### example 
 ```cpp
 // 4. Logical operators
