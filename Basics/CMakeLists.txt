@@ -14,5 +14,6 @@ add_executable(Basics
     # 11_operators.cpp
     # 12_identifiers.cpp
     # 13_if-else.cpp
-    14_if-else-if-else.cpp
+    # 14_if-else-if-else.cpp
+    15_loggicalOperatorsifElse.cpp
 )
