@@ -598,7 +598,7 @@ else{
 }
 ```
 EXAMPLES
-###### Operatos
+###### Operators
 ```cpp
 && --> and
 || --> or
