@@ -647,3 +647,42 @@ else
 ```
 8 is not greater than and equals to 4: 12
 ```
+
+### Short hand if-else (Ternary Operator)
+A ternary operator evaluates the test condition and executes a block of code based on the result of the condition.
+
+Its syntax is
+```cpp
+condition ? expression1 : expression2;
+```
+Here, condition is evaluated and if condition is true, expression1 is executed. And, if condition is false, expression2 is executed. The ternary operator takes 3 operands (condition, expression1 and expression2).Hence, the name ternary operator.
+
+we are going to perform an same example program with if-else and ternary operator one by one, so we can see the difference between them.
+#### if-else example
+```cpp
+int time = 20;
+
+if (time < 18)
+{
+    cout << "Good Day!!!" << endl;
+}
+else
+{
+    cout << "Good evening!!!" << endl;
+}
+```
+###### OUTPUT
+```
+Good evening!!!
+```
+#### Ternary Operator Example
+``` cpp
+int time = 20;
+
+(time < 18) ? (cout << "Good Day!!!" << endl) : (cout << "Good evening!!!" << endl);
+```
+###### OUTPUT
+```
+Good evening!!!
+```
+From the above example, we can see both programs returning the same output but you can see how by using the ternary operator we write the same code in one line, where if-else takes more than  5-6 lines.
